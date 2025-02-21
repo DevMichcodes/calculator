@@ -7,4 +7,6 @@ function subtractNumbers(...numbers){
 function multiplyNumbers(...numbers){
     return numbers.reduce((product, num)=> product * num );
 }
-console.log(multiplyNumbers(-15,-9));
+function divideNumbers(...numbers){
+    return numbers.reduce((divide, num)=> divide/num);
+}
