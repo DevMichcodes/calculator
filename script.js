@@ -4,3 +4,7 @@ function addNumbers(...numbers){
 function subtractNumbers(...numbers){
     return numbers.reduce((subtract, num)=> subtract-num);
 }
+function multiplyNumbers(...numbers){
+    return numbers.reduce((product, num)=> product * num );
+}
+console.log(multiplyNumbers(-15,-9));
