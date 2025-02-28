@@ -10,3 +10,8 @@ function multiplyNumbers(...numbers){
 function divideNumbers(...numbers){
     return numbers.reduce((divide, num)=> divide/num);
 }
+let display = document.getElementById("display");
+
+function appendCharacter(character) {
+    display.value += character;
+}
