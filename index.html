@@ -18,33 +18,33 @@
     </div>
     <div>
         <button onclick="clearDisplay()" id="clear"> C </button>
-        <button id="percentage"> % </button>
+        <button  onclick="appendCharacter('%')"id="percentage"> % </button>
         <button onclick="clearOne()"  id="backspace"> ⌫  </button>
-        <button id="divide"> ÷ </button>
+        <button onclick="appendCharacter('/')" id="divide"> ÷ </button>
     </div>
     <div>
         <button onclick="appendCharacter('7')"   id="number"> 7 </button>
         <button onclick="appendCharacter('8')"  id="number"> 8 </button>
         <button onclick="appendCharacter('9')" id="number"> 9 </button>
-        <button id="multiply"> × </button>
+        <button onclick="appendCharacter('*')" id="multiply"> × </button>
     </div>
     <div>
         <button onclick="appendCharacter('4')" id="number"> 4 </button>
         <button onclick="appendCharacter('5')" id="number"> 5 </button>
         <button onclick="appendCharacter('6')" id="number"> 6 </button>
-        <button id="addition"> + </button>
+        <button onclick="appendCharacter('+')" id="addition"> + </button>
     </div>
     <div>
         <button onclick="appendCharacter('3')"  id="number"> 3  </button>
         <button onclick="appendCharacter('2')" id="number">  2 </button>
         <button onclick="appendCharacter('1')" id="number">  1 </button>
-        <button id="subtraction"> - </button>
+        <button onclick="appendCharacter('-')" id="subtraction"> - </button>
     </div>
     <div>
-        <button id=""> ^ </button>
+        <button onclick="appendCharacter('*** Happy calculating***')"> *** </button>
         <button onclick="appendCharacter('0')"  id="zero">  0 </button>
-        <button id="decimal">  . </button>
-        <button id="result"> = </button>
+        <button onclick="appendCharacter('.')" id="decimal">  . </button>
+        <button onclick="calculateResult()" id="result"> = </button>
     </div>
 </div>
 </body>
