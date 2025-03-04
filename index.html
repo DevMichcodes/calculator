@@ -8,43 +8,44 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <p><marquee>Math is fun *** Enjoy Calculating*** Math is fun</marquee></p>
    <!-- <div class="canvas-container">
     <canvas id="calcSpace" width="400px" height="500px"></canvas>
     -->
-    <div class="calcultor">
+    <div class="calculator">
         
     <div>
         <input type="text" id="display" disabled>
     </div>
     <div>
         <button onclick="clearDisplay()" id="clear"> C </button>
-        <button  onclick="appendCharacter('%')"id="percentage"> % </button>
+        <button  onclick="appendCharacter('%')"id="percentage" class="operator"> % </button>
         <button onclick="clearOne()"  id="backspace"> ⌫  </button>
-        <button onclick="appendCharacter('/')" id="divide"> ÷ </button>
+        <button onclick="appendCharacter('/')" id="divide" class="operator"> ÷ </button>
     </div>
     <div>
         <button onclick="appendCharacter('7')"   id="number"> 7 </button>
         <button onclick="appendCharacter('8')"  id="number"> 8 </button>
         <button onclick="appendCharacter('9')" id="number"> 9 </button>
-        <button onclick="appendCharacter('*')" id="multiply"> × </button>
+        <button onclick="appendCharacter('*')" id="multiply" class="operator"> × </button>
     </div>
     <div>
         <button onclick="appendCharacter('4')" id="number"> 4 </button>
         <button onclick="appendCharacter('5')" id="number"> 5 </button>
         <button onclick="appendCharacter('6')" id="number"> 6 </button>
-        <button onclick="appendCharacter('+')" id="addition"> + </button>
+        <button onclick="appendCharacter('+')" id="addition" class="operator"> + </button>
     </div>
     <div>
         <button onclick="appendCharacter('3')"  id="number"> 3  </button>
         <button onclick="appendCharacter('2')" id="number">  2 </button>
         <button onclick="appendCharacter('1')" id="number">  1 </button>
-        <button onclick="appendCharacter('-')" id="subtraction"> - </button>
+        <button onclick="appendCharacter('-')" id="subtraction" class="operator"> - </button>
     </div>
     <div>
-        <button onclick="appendCharacter('*** Happy calculating***')"> *** </button>
+        <button onclick="appendCharacter('*** Happy calculating ***')"> *** </button>
         <button onclick="appendCharacter('0')"  id="zero">  0 </button>
         <button onclick="appendCharacter('.')" id="decimal">  . </button>
-        <button onclick="calculateResult()" id="result"> = </button>
+        <button onclick="calculateResult()" id="result" class="operator"> = </button>
     </div>
 </div>
 </body>
