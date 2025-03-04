@@ -35,7 +35,7 @@ display.value = display.value.slice(0,-1);
     expression = expression.replace(/%/g, "/100")
 
       // Ensure only valid characters are processed
-      if (/^[0-9+\-*/.% ^\s]+$/.test(expression)) {
+      if (/^[0-9+\-*/.%\s]+$/.test(expression)) {
         return new Function("return " + expression)(); // Safely evaluate
     } else {
         throw new Error("Invalid Expression");
